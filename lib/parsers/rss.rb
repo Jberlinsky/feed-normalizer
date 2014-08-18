@@ -84,6 +84,7 @@ module FeedNormalizer
       rss.items.each do |rss_item|
         unless rss_item.title.nil? && rss_item.description.nil? # some feeds return empty items
           feed_entry = Entry.new
+          feed_entry.original = rss_item
           map_functions!(item_mapping, rss_item, feed_entry)
 
           # custom item elements

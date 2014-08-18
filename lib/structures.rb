@@ -159,7 +159,6 @@ module FeedNormalizer
       end
   end
 
-
   # Represents a feed item entry.
   # Available fields are:
   #  * content
@@ -176,7 +175,7 @@ module FeedNormalizer
 
     HTML_ELEMENTS = [:content, :description, :title]
     SIMPLE_ELEMENTS = [:date_published, :urls, :id, :authors, :copyright, :categories, :last_updated, :enclosures]
-    BLENDED_ELEMENTS = []
+    BLENDED_ELEMENTS = [:original]
 
     ELEMENTS = HTML_ELEMENTS + SIMPLE_ELEMENTS + BLENDED_ELEMENTS
 
@@ -187,7 +186,7 @@ module FeedNormalizer
       @authors = []
       @categories = []
       @enclosures = []
-      @date_published, @content, @last_updated = nil
+      @date_published, @content, @last_updated, @original = nil
     end
 
     undef date_published
