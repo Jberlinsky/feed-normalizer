@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.email = "andy@tinnedfruit.org"
   s.extra_rdoc_files = ["History.txt", "License.txt", "Manifest.txt", "README.txt"]
   s.files = [".gemtest", "History.txt", "License.txt", "Manifest.txt", "README.txt", "Rakefile", "lib/feed-normalizer.rb", "lib/html-cleaner.rb", "lib/parsers/rss.rb", "lib/parsers/simple-rss.rb", "lib/structures.rb", "test/data/atom03.xml", "test/data/atom10.xml", "test/data/rdf10.xml", "test/data/rss20.xml", "test/data/rss20diff.xml", "test/data/rss20diff_short.xml", "test/test_feednormalizer.rb", "test/test_htmlcleaner.rb"]
-  s.homepage = "An extensible Ruby wrapper for Atom and RSS parsers."
+  s.homepage = "http://feed-normalizer.rubyforge.org/"
   s.licenses = ["MIT"]
   s.rdoc_options = ["--main", "README.txt"]
   s.rubygems_version = "2.2.2"
