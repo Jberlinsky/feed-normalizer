@@ -102,6 +102,7 @@ module FeedNormalizer
       atomrss.entries.each do |atomrss_entry|
         unless atomrss_entry.title.nil? && atomrss_entry.description.nil? # some feeds return empty items
           feed_entry = Entry.new
+          feed_entry.original = atomrss_entry
           map_functions!(entry_mapping, atomrss_entry, feed_entry)
 
           # custom entry elements
